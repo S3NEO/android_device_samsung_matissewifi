@@ -1,3 +1,7 @@
+## GSM Blobs - Pinned to G900FXXS1BPCL_G900FOXA1BOJ1_BTU versions
+# Radio
+lib/libsec-ril.so:vendor/lib/libsec-ril.so|075570a628f465f92f3067afcefb6938d4e5dc3a
+
 # Samsung Camera Specific Blobs - Pinned to Samsung sensor specific files 
 lib/E08QL_libTsAe.so:vendor/lib/E08QL_libTsAe.so|b26488bba1d9a408794ffeef99b334d710abde69
 lib/E08QL_libTsAf.so:vendor/lib/E08QL_libTsAf.so|1cb71e8b40435075deaebe11faeb5e8e2b4a338f
