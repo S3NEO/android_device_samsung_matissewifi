@@ -1,3 +1,0 @@
-## US Cellular Blobs - pinned to G900R4VXU2BOG2_G900R4USC2BOG2_USC versions
-# Radio
-lib/libsec-ril.so:vendor/lib/libsec-ril.usc.so|a5d87993e6a7e600cb493ee99693cf15e358f681

@@ -17,8 +17,8 @@
 
 set -e
 
-export DEVICE=klte
-export DEVICE_COMMON=klte-common
+export DEVICE=s3ve3gjv
+export DEVICE_COMMON=s3ve3g-common
 export VENDOR=samsung
 
 ./../$DEVICE_COMMON/extract-files.sh $@
