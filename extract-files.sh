@@ -17,8 +17,8 @@
 
 set -e
 
-export DEVICE=s3ve3gjv
-export DEVICE_COMMON=s3ve3g-common
+export DEVICE=matissewifi
+export DEVICE_COMMON=matisse-common
 export VENDOR=samsung
 
 ./../$DEVICE_COMMON/extract-files.sh $@

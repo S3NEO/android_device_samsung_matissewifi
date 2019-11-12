@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_device_samsung_s3ve3g-common",
-    "target_path": "device/samsung/s3ve3g-common"
+    "repository": "android_device_samsung_matisse-common",
+    "target_path": "device/samsung/matisse-common"
   }
 ]

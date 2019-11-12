@@ -13,14 +13,14 @@
 # limitations under the License.
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit from s3ve3g device
-$(call inherit-product, device/samsung/s3ve3gjv/device.mk)
+# Inherit from matissewifi device
+$(call inherit-product, device/samsung/matissewifi/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_s3ve3gjv
-PRODUCT_DEVICE := s3ve3gjv
+PRODUCT_NAME := full_matissewifi
+PRODUCT_DEVICE := matissewifi
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := s3ve3gjv
+PRODUCT_MODEL := matissewifi

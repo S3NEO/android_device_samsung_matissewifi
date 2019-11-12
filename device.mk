@@ -17,14 +17,19 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
+
+# IR Blaster
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-service \
+    android.hardware.ir@1.0-impl \
+    consumerir.default \
+    consumerir.msm8226
+
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/s3ve3gjv/s3ve3gjv-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/matissewifi/matissewifi-vendor.mk)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
-# NFC
-# $(call inherit-product, device/samsung/s3ve3g-common/nfc/pn547/product.mk)
-
-# common s3ve3g
-$(call inherit-product, device/samsung/s3ve3g-common/s3ve3g.mk)
+# common matisse
+$(call inherit-product, device/samsung/matisse-common/matisse.mk)
