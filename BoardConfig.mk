@@ -19,12 +19,11 @@ include device/samsung/matisse-common/BoardConfigCommon.mk
 # Assert
 TARGET_OTA_ASSERT_DEVICE := matissewifi
 
+# Build Fingerprint
+BUILD_FINGERPRINT := samsung/matissewifixx/matissewifi:5.0.2/LRX22G/T530XXU1BOJ4:user/release-keys
+
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_matissewifi_defconfig
-
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_msm8226
-# TARGET_LIBINIT_MSM8226_DEFINES_FILE := device/samsung/matissewifi/init/init_matisse.cpp
 
 # HIDL
 DEVICE_MANIFEST_FILE += device/samsung/matissewifi/manifest.xml
