@@ -17,6 +17,9 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 # System properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=wifi-only \
