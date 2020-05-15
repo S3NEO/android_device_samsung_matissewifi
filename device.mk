@@ -26,10 +26,7 @@ PRODUCT_COPY_FILES += \
 
 # IR Blaster
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-service \
-    android.hardware.ir@1.0-impl \
-    consumerir.default \
-    consumerir.msm8226
+    android.hardware.ir@1.0-service.samsung
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/samsung/matissewifi/matissewifi-vendor.mk)
