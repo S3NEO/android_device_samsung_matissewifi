@@ -17,11 +17,6 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# System properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carrier=wifi-only \
-    ro.radio.noril=1
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
