@@ -17,7 +17,7 @@
 include device/samsung/matisse-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := matissewifi
+TARGET_OTA_ASSERT_DEVICE := matisse,matissewifi,matissewifiue
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_matissewifi_defconfig
