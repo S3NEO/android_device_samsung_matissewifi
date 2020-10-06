@@ -22,8 +22,5 @@ TARGET_OTA_ASSERT_DEVICE := matisse,matissewifi,matissewifiue
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_matissewifi_defconfig
 
-# HIDL
-DEVICE_MANIFEST_FILE += device/samsung/matissewifi/manifest.xml
-
 # inherit from the proprietary version
 -include vendor/samsung/matissewifi/BoardConfigVendor.mk
