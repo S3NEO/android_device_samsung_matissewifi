@@ -20,6 +20,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/samsung/matissewifi/matissewifi-vendor.mk)
 
