@@ -24,6 +24,14 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
+
+# IR Blaster
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-service.samsung
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/samsung/matissewifi/matissewifi-vendor.mk)
 
