@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_matissewifi.mk
+    device/samsung/matissewifi/lineage_matissewifi.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_matissewifi-user \

@@ -15,22 +15,22 @@
 # limitations under the License.
 #
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_default.mk)
+
+# IR Blaster
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-service.samsung
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+DEVICE_PACKAGE_OVERLAYS += device/samsung/matissewifi/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
-# IR Blaster
-PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-service.samsung
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/samsung/matissewifi/matissewifi-vendor.mk)
