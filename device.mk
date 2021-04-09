@@ -33,7 +33,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/matissewifi/matissewifi-vendor.mk)
+$(call inherit-product, vendor/samsung/matissewifi/matissewifi-vendor.mk)
 
 # common matisse
 $(call inherit-product, device/samsung/matisse-common/matisse.mk)
