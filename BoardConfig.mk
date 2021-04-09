@@ -19,14 +19,14 @@ include device/samsung/matisse-common/BoardConfigCommon.mk
 # Assert
 TARGET_OTA_ASSERT_DEVICE := matisse,matissewifi,matissewifiue
 
-# Kernel
-TARGET_KERNEL_CONFIG := lineage_matissewifi_defconfig
-
 # HIDL
 DEVICE_MANIFEST_FILE += device/samsung/matissewifi/manifest.xml
+
+# Kernel
+TARGET_KERNEL_CONFIG := lineage_matissewifi_defconfig
 
 # SELinux
 include device/samsung/matissewifi/sepolicy/sepolicy.mk
 
 # inherit from the proprietary version
--include vendor/samsung/matissewifi/BoardConfigVendor.mk
+include vendor/samsung/matissewifi/BoardConfigVendor.mk
