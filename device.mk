@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service.samsung
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/matissewifi/matissewifi-vendor.mk)
+$(call inherit-product, vendor/samsung/matissewifi/matissewifi-vendor.mk)
 
 # common matisse
 $(call inherit-product, device/samsung/matisse-common/matisse.mk)
