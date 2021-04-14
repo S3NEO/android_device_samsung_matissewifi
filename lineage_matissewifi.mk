@@ -22,3 +22,5 @@ $(call inherit-product, device/samsung/matissewifi/full_matissewifi.mk)
 
 PRODUCT_DEVICE := matissewifi
 PRODUCT_NAME := lineage_matissewifi
+
+PRODUCT_GMS_CLIENTID_BASE := android-samsung
