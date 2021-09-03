@@ -24,6 +24,7 @@ DEVICE_MANIFEST_FILE += device/samsung/matissewifi/manifest.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_matissewifi_defconfig
+TARGET_KERNEL_RECOVERY_CONFIG := lineage_matissewifi_recovery_defconfig
 
 # SELinux
 include device/samsung/matissewifi/sepolicy/sepolicy.mk
